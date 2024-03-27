@@ -1,0 +1,382 @@
+.Form {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form {
+      margin-top: 40px;
+    }
+  }
+  .Form-Item {
+    border-top: 1px solid #ddd;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item {
+      padding-left: 14px;
+      padding-right: 14px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      flex-wrap: wrap;
+    }
+  }
+  .Form-Item:nth-child(5) {
+    border-bottom: 1px solid #ddd;
+  }
+  .Form-Item-Label {
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label {
+      max-width: inherit;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+    }
+  }
+  .Form-Item-Label.isMsg {
+    margin-top: 8px;
+    margin-bottom: auto;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label.isMsg {
+      margin-top: 0;
+    }
+  }
+  .Form-Item-Label-Required {
+    border-radius: 6px;
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 48px;
+    display: inline-block;
+    text-align: center;
+    background: #5bc8ac;
+    color: #fff;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label-Required {
+      border-radius: 4px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      width: 32px;
+      font-size: 10px;
+    }
+  }
+  .Form-Item-Input {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Input {
+      margin-left: 0;
+      margin-top: 18px;
+      height: 40px;
+      flex: inherit;
+      font-size: 15px;
+    }
+  }
+  .Form-Item-Textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Textarea {
+      margin-top: 18px;
+      margin-left: 0;
+      height: 200px;
+      flex: inherit;
+      font-size: 15px;
+    }
+  }
+  .Form-Btn {
+    border-radius: 6px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 280px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: #5bc8ac;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Btn {
+      margin-top: 24px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      width: 160px;
+      font-size: 16px;
+    }
+  }
+  
+
+
+  #overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+
+    /* modalWindowはz-index: 100000 */
+    z-index: 90000;
+   }
+  
+  #modalWindow {
+    width: 700px;
+    height: 600px;
+    position: fixed;
+    /* border: 2px solid #D04255; */
+    border: 8px solid #AADD53;
+    background-color: #FFF;
+    color: #777;
+    border-radius: 20px;
+    display: none;
+    z-index: 100000;
+    overflow: scroll;
+    overflow-y: scroll;
+    -ms-overflow-style: none;    /* IE, Edge 対応 */
+    scrollbar-width: none;       /* Firefox 対応 */
+  }
+  #modalWindow::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+    display:none;
+  }
+
+  /* PayPal用 */
+  #overlay_schedule {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+
+    /* modalWindowはz-index: 100000 */
+    z-index: 90000;
+   }
+  
+  #modalWindow_schedule {
+    width: 700px;
+    height: 600px;
+    position: fixed;
+    /* border: 2px solid #D04255; */
+    border: 8px solid #AADD53;
+    background-color: #FFF;
+    border-radius: 20px;
+    display: none;
+    z-index: 100000;
+    overflow: scroll;
+    overflow-y: scroll;
+    -ms-overflow-style: none;    /* IE, Edge 対応 */
+    scrollbar-width: none;       /* Firefox 対応 */
+  }
+  #modalWindow_schedule::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+    display:none;
+  }
+
+  /* body {
+    text-align: center;
+  } */
+  
+  /* button {
+    width: 100px;
+    height: 50px;
+    font-size: 1.2em;
+    color: #D04255;
+    background-color: #FFF;
+    border: solid 2px #D04255;
+    border-radius: 3px;
+    transition: .4s;
+  }
+  
+  button:hover {
+    background: #D04255;
+    color: #FFF;
+  } */
+
+  .logout-button {
+    width: 50px;
+    height: 30px;
+    font-size: 0.5em;
+    color: #4777df;
+    background-color: #FFF;
+    border: solid 2px #4777df;
+    border-radius: 3px;
+    transition: .4s;
+  }
+  
+  .logout-button:hover {
+    background: #4777df;
+    color: #FFF;
+  }
+  
+
+
+
+  /* @charset "utf-8";
+
+  header{
+    margin-top: 30px;
+    color: #43A047;
+  }
+  hr{
+    border-width: 3px;
+    border-color: #43A047;
+  }
+  h1{
+    font-size: 25px;
+      font-weight: bold;
+      margin: 0;
+    text-align: center;
+  } */
+  .align-light{
+      text-align: right;
+  }
+  .form-group{
+    text-align: left;
+    margin: 30px 0px 15px 0px;
+  }
+  footer p{
+    text-align: center;
+  }
+  .form-group input:required{
+    background: #ffcdd2;
+  }
+  .form-group input[type="email"]:invalid{
+    background: #ffcdd2;
+  }
+  .form-group input:valid{
+    background: transparent;
+  }
+  .form-group input:focus{
+    background: #DCEDC8;
+  }
+
+  #google-icon {
+      border-radius: 50%;
+  }
+
+/* StatusBox */
+.StatusFlex {
+    display:flex;	
+    flex-diretion: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-box {
+    width: 80px;
+    height: 100px;
+    /* background-color: #aaa; */
+    margin: 5px 5px 5px 5px;
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end； */
+    justify-content: space-between;
+    /* justify-content: center; 左右中央揃え */
+    align-items: center;     /*上下中央揃え*/
+}
+
+.status-icons {
+  width:50px;
+  height:50px;
+}
+
+.descriotion {
+  font-size: 10px;
+  margin: 30px 0px 0px 0px;
+}
+
+/* .inner-content {
+
+} */
+#auth {
+    height: 50px;
+}
+
+#account-img {
+    border-radius: 50%;
+}
+
+.check-icon {
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.flex-spacer {
+  width: 10px;
+  height: 70px;
+}
+
+.next-icon {
+  width: 10px;
+  height: 40px;
+  margin: 43px 0px 0px 0px;
+}
+
+.bottom-status {
+  height: 65px;
+}
+
+#cute-checkbox {
+  text-align: center;
+}
+
+.filelabel {
+  background-color: orange;  /* 背景色 */
+  color: white;              /* 文字色 */
+  border: 2px solid orange;  /* 枠線 */
+  border-radius: 3em;        /* 角丸 */
+  padding: 12px 9px;         /* 内側の余白 */
+  display: inline-block;     /* インラインブロック化 */
+}
+.filelabel img {
+  vertical-align: bottom;    /* 画像の垂直方向の配置 */
+}
+.filelabel:hover {
+  opacity: 0.5;              /* 半透明 */
+  border: 2px solid red;     /* 枠線(赤色) */
+  cursor: pointer;           /* マウス形状(ポインタ) */
+}
+#logo-img-input {
+  display: none;  /* 本来のファイル選択フォームは非表示に */
+}

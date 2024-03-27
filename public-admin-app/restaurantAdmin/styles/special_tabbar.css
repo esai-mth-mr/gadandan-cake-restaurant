@@ -1,0 +1,72 @@
+/* body {
+  margin: 0;
+} */
+svg {
+  height: 100vmin;
+  left: calc(50% - 50vmin);
+  /* position: absolute; */
+  width: 100vmin;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.drop {
+  fill:#1d1636;
+}
+.drop-desktop {
+  display: none;
+}
+@media (max-width: 600px) {
+  .drop-desktop {
+    display: block;
+  }
+}
+.background {
+  fill:#30284d;
+}
+.icon {
+  fill: #ffd6b3;
+  stroke-width:0.125;
+  transition: transform 300ms cubic-bezier(.87,-0.91,.66,1.42), fill 300ms cubic-bezier(.87,-0.91,.66,1.42);
+  transform: scale(0.8);
+}
+.icon--expanded {
+  transform: scale(1.15);
+  fill: #fff;
+}
+.icon-sign {
+  transform-origin: 27.5% 78.5%;
+}
+.icon-drink {
+  transform-origin: 42% 77%;
+}
+.icon-train {
+  transform-origin: 56% 77%;
+}
+.icon-umbrella {
+  transform-origin: 70% 77%;
+}
+.icon-drink.icon--expanded ~ .bubble {
+  transform: translateX(13.9px);
+}
+.icon-train.icon--expanded ~ .bubble {
+  transform: translateX(28.4px);
+}
+.icon-umbrella.icon--expanded ~ .bubble {
+  transform: translateX(42.8px);
+}
+.hitarea {
+  cursor: pointer;
+}
+.bubble {
+  transition: transform 300ms cubic-bezier(.87,-0.91,.66,1.42);
+  fill:#fd6465;
+}
+.cover {
+  fill:#1d1636;
+}
+
+/* #bar {
+    width:100px;
+} */

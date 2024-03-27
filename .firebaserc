@@ -1,0 +1,15 @@
+{
+  "targets": {
+    "cake-system-9351f": {
+      "hosting": {
+        "admin-app": [
+          "cake-order-admin"
+        ],
+        "order-app": [
+          "cake-system-9351f"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

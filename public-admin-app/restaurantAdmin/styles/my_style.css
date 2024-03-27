@@ -1,0 +1,604 @@
+#logo_img {
+    /* max-width: 100%;
+    height: auto; */
+    /* height:55px;
+    width:230px; */
+    height: 55px;
+    width: 130px;
+}
+#header_img {
+    /* width: 60%; */
+    /* width: 60%; */
+    width: 75%;
+    /* height: 100%; */
+    height: 90%;
+    /* margin: auto 0; */
+    /* margin: 0 0px 0 17%; */
+    /* padding: 0 0px 3px 0; */
+    margin: 0 auto;
+}
+
+#my_header {
+  /* background-color: rgb(233, 168, 158); */
+  /* background-color: rgb(255 185 240); */
+  /* background-color: rgb(255 255 255); */
+  background-color: rgb(253 205 205);
+}
+
+/* PC画面 */
+@media screen and (min-width: 610px) {
+    #header_img {
+        /* width: 60%; */
+        width: 47%;
+        margin: 0 0 0 430px;
+    }
+}
+/* @media screen and (max-width: 1500px) {
+    #header_img {
+    }
+} */
+
+.AccountPopup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+.AccountPopup.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  /* top: 80%; */
+  transform: translate(-50%,-50%);
+  /* width: 80%; */
+  width: 50%;
+  /* max-width: 600px; */
+
+  height : 300px;
+  width : 80%;
+  padding: 35px 10px 10px 10px;
+  /* background-color: #fff; */
+  /* background-color: #FFB000; */
+  background-color: #FFBD76;
+  /* background-image: linear-gradient(to top left, #FFBD76 10%, #FFBD9d 65%, white 200%); */
+  background-image: linear-gradient(to top left, #FFBD76 10%, #FFDD8B 65%, white 200%);
+
+  /* border-radius: 100px 25px 50px 50px / 50px 25px 50px 25px; */
+  border-radius: 20px;
+
+  z-index: 2;
+}
+.popup-inner img {
+  width: 100%;
+}
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+
+#RankingWrapper {
+    /* background-color: #03A9F4;  /* 背景色指定 */ */
+    width: 100%;               /* 幅指定 */
+    /* height: 90px;               /* 高さ指定 */
+    height: auto;               /* 幅指定 */
+    margin:  0 auto;            /* 中央寄せ */
+    /* background-image: url(images/Universe_2.jpg); */
+}
+#Ranking {
+    /* background-color: #BFFF76;  /* 背景色指定 */
+    /* width: 280px; */
+    /* width: 90%;               /* 幅指定 */
+    width: 100%;               /* 幅指定 */
+    /* height: 700px; */
+    height: auto;               /* 幅指定 */
+
+    margin:  0 auto;
+
+    border-collapse: separate;
+    /* border-spacing: 0px 10px 0px 20px; */
+    border-spacing: 0px 10px;
+
+    border-radius: 10px
+
+    /* border: 0px none; */
+    /* border: 1px; */
+}
+#Ranking tr {
+    /* background-color: #DFFFFF;  /* 背景色指定 */ */
+    border: none;
+    /* height: 25px; */
+    height: 32px;
+    /* height: 32px; */
+    /* border-collapse: separate;
+    border-spacing: 0px 10px; */
+}
+#Ranking td {
+    /* border-radius: 10px */
+    /* border: 0px none; */
+}
+
+#Ranking {
+  border: none;
+  border-radius: 10px;
+  border-spacing: 0;
+  border-collapse: separate;
+  border: 1px solid #aaa;
+  font-size: 11px;
+}
+
+#Ranking th {
+    text-align: center;
+}
+
+.DisplayInline {
+    display: inline;
+}
+
+.RankingImg {
+    margin: 5px 10px 5px 10px;
+    border-radius: 50%;
+}
+.MessengerSize {
+    font-size: 20px;
+}
+
+#Ranking tr th,
+#Ranking tr td {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+#Ranking tr:nth-child(odd){
+  background: #FFFDDF;
+}
+#Ranking tr:nth-child(even){
+  background: #FFF9A1;
+}
+#Ranking tr th{
+  background: #333;
+  color:#fff;
+}
+#Ranking tr td:first-child {
+  border-left: none;
+}
+#Ranking tr td:last-child {
+  border-right: none;
+}
+#Ranking tr th:first-child {
+  border-radius: 10px 0 0 0;
+  padding: 2px;
+}
+#Ranking tr th:last-child {
+  border-right: none;
+  border-radius: 0 10px 0 0;
+}
+#Ranking tr:last-child td:first-child{
+  border-top: none;
+  border-radius: 0 0 0 10px;
+}
+#Ranking tr:last-child td:last-child {
+  /* border-bottom: none; */
+  border-radius: 0 0 10px 0;
+}
+#Ranking tr:last-child td {
+  /* border-bottom: none; */
+  /* border-radius: 0 0 10px 0; */
+}
+.f-container{
+    /* height: 57px; */
+    height: 65px;
+	display:flex;
+    align-items: center; /* 縦方向中央揃え */
+}
+
+.right_name_box {
+    /* line-height: 56px; */
+}
+
+
+.cell_left {
+text-align: left;
+/* vertical-align: top; */
+}
+.cell_center {
+text-align: center;
+/* vertical-align: top; */
+/* padding: 5px; */
+/* padding: 1px; */
+}
+
+/* body{margin:0;padding:0;} */
+/* Hide text box */
+/* div{background:white;} */
+#tableEventShifter{
+  /* Need to set the focus.
+     So, 'Display: none;' is not working.
+  */
+  position:absolute;
+  z-index: -10;
+  height:0;
+}
+
+/* Selected row color. */
+.selected {background:yellow;}
+
+
+/* ヘッダー画像 */
+.TOP_Image {
+  position: relative;
+}
+
+.TOP_Image p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    /*文字の装飾は省略*/
+    color: white;/*文字は白に*/
+    font-weight: bold; /*太字に*/
+    /* font-size: 2em;/*サイズ2倍*/
+    /* font-size: 2em;/*サイズ2倍*/
+    font-size: 10px;/*サイズ2倍*/
+    font-family :serif, Verdana, Hannari, Quicksand, sans-serif;/*Google Font*/
+
+    line-height: 30px;
+    width: 97%;
+    text-align: center;
+  }
+
+#Small_Molkky_1 {
+    position: absolute;
+    top: calc(50% - 101px);
+    left: calc(50% - 97px);
+    width: 50px;
+    height: 50px;
+    transform: rotate(-115deg);
+}
+#Small_Molkky_2 {
+    position: absolute;
+    top: calc(50% - 95px);
+    left: calc(50% - 35px);
+    width: 50px;
+    height: 50px;
+    transform: rotate(-81deg);
+}
+#Small_Molkky_3 {
+    position: absolute;
+    top: calc(50% - 99px);
+    left: calc(50% + 36px);
+    width: 50px;
+    height: 50px;
+    transform: rotate(80deg);
+}
+#Small_Molkky_4 {
+    position: absolute;
+    top: calc(50% - 86px);
+    left: calc(50% + 102px);
+    width: 50px;
+    height: 50px;
+    transform: rotate(-53deg);
+}
+#Small_Molkky_5 {
+    position: absolute;
+    top: calc(50% - 26px);
+    left: calc(50% + 128px);
+    width: 50px;
+    height: 50px;
+    transform: rotate(-31deg);
+}
+#Small_Molkky_6 {
+    position: absolute;
+    top: calc(50% + 35px);
+    left: calc(50% + 125px);
+    width: 50px;
+    height: 50px;
+    transform: rotate(58deg);
+}
+#Small_Molkky_7 {
+    position: absolute;
+    top: calc(50% + 59px);
+    left: calc(50% + 52px);
+    width: 50px;
+    height: 50px;
+    transform: rotate(-71deg);
+}
+#Small_Molkky_8 {
+    position: absolute;
+    top: calc(50% + 54px);
+    left: calc(50% - 18px);
+    width: 50px;
+    height: 50px;
+    transform: rotate(76deg);
+}
+#Small_Molkky_9 {
+    position: absolute;
+    top: calc(50% + 54px);
+    left: calc(50% - 84px);
+    width: 50px;
+    height: 50px;
+    transform: rotate(73deg);
+}
+#Small_Molkky_10 {
+    position: absolute;
+    top: calc(50% + 38px);
+    left: calc(50% - 166px);
+    width: 50px;
+    height: 50px;
+    transform: rotate(-53deg);
+}
+#Small_Molkky_11 {
+    position: absolute;
+    top: calc(50% + -21px);
+    left: calc(50% - 175px);
+    width: 50px;
+    height: 50px;
+    transform: rotate(30deg);
+}
+#Small_Molkky_12 {
+    position: absolute;
+    top: calc(50% - 84px);
+    left: calc(50% - 156px);
+    width: 50px;
+    height: 50px;
+    transform: rotate(18deg);
+}
+
+/* .TOP_Image img {
+  width: 100%;
+  height: 200px;
+} */
+#TOP_bg_img {
+  width: 100%;
+  height: 200px;
+}
+
+
+#dorasuki_table {
+
+}
+.dorasuki_table {
+    /* background-color: #BAF4BC;
+    border-radius: 0 0 0 0; */
+}
+
+/* #Ranking tr th,
+#Ranking tr td {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+#Ranking tr:nth-child(odd){
+  background: #FFFDDF;
+}
+#Ranking tr:nth-child(even){
+  background: #FFF9A1;
+}
+#Ranking tr th{
+  background: #333;
+  color:#fff;
+}
+#Ranking tr td:first-child {
+  border-left: none;
+}
+#Ranking tr td:last-child {
+  border-right: none;
+}
+#Ranking tr th:first-child {
+  border-radius: 10px 0 0 0;
+}
+#Ranking tr th:last-child {
+  border-right: none;
+  border-radius: 0 10px 0 0;
+}
+#Ranking tr:last-child td:first-child{
+  border-top: none;
+  border-radius: 0 0 0 10px;
+} */
+
+/* #Dorasuki_table tr th:first-child {
+  border-radius: 0 0 0 0;
+} */
+#Dorasuki_table {
+    /* border: 2px solid #aaa; */
+    /* color: #aaa; */
+    color: #ccc;
+    font-weight: bold;
+    /* width:100px; */
+    /* width: 92%; */
+    width: 100%;
+    /* width:10%; */
+    table-layout: fixed;
+}
+#Dorasuki_table tr th:last-child {
+  border-radius: 0 0 0 0;
+}
+#Dorasuki_table tr:last-child td:last-child {
+  border-radius: 0 0 0 0;
+  /* border-bottom: 1px solid #ccc; */
+  text-align: center;
+}
+#Dorasuki_table tr:first-child td:last-child {
+  border-radius: 0 0 0 0;
+  /* border-bottom: 1px solid #ccc; */
+}
+#Dorasuki_table tr:first-child td:first-child {
+  border-radius: 0 0 0 0;
+  /* border-bottom: 1px solid #ccc; */
+}
+#Dorasuki_table tr:last-child td:first-child {
+  border-radius: 0 0 0 0;
+  /* border-bottom: 1px solid #ccc; */
+}
+
+#Dorasuki_table tr:nth-child(odd){
+  /* background: #BAF4BC; */
+  /* background: #fff6b1; */
+  /* background: #ffffff; */
+  text-align: center;
+  /* border-top: 2px solid #ccc; */
+  /* border-bottom: 1px solid #ccc; */
+  /* border-right: 2px solid #ccc;
+  border-left: 2px solid #ccc; */
+  /* border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc; */
+}
+#Dorasuki_table tr:nth-child(even){
+  /* background: #BAF4BC; */
+  /* background: #fff6b1; */
+  /* background: #ffffff; */
+  text-align: center;
+  /* border-bottom: none; */
+  /* border-top: 1px solid #ccc;
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  border-left: 2px solid #ccc; */
+  /* border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc; */
+}
+#Dorasuki_table tr:last-child td:first-child{
+  border-radius: 0 0 0 0;
+}
+#Dorasuki_table tr td{
+  border-radius: 0 0 0 0;
+}
+#Dorasuki_table tr th:first-child {
+  border-radius: 0 0 0 0;
+}
+#Dorasuki_table tr:nth-child(even) td{
+    /* border-bottom: none; */
+    /* border-bottom: 2px solid #ccc; */
+}
+/* #Dorasuki_table tr:nth-child(even) td{
+    border-top: 1px solid #ccc;
+} */
+
+#Dorasuki_table tr:last-child(even) td{
+    /* border-top: 2px solid #ccc; */
+}
+#Dorasuki_table {
+    /* background-color: blue; */
+}
+/* #Dorasuki_table tr:nth-child(even){
+    background-color: blue;
+} */
+#Dorasuki_table tr:nth-child(2) {
+    /* background-color: blue; */
+}
+#Dorasuki_table tr:last-child td{
+    border-bottom: none;
+}
+
+.small_tr_odd {
+    background-color: #FFFDDF;
+}
+.small_tr_even {
+    background-color: #FFF9A1;
+}
+/* #Dorasuki_table td {
+    background-color:blue;
+    border-radius: 0 0 0 0;
+} */
+/* #Dorasuki_table tr:last-child td:last-child {
+    border-bottom: none;
+    border-radius: 0 0 0 0;
+} */
+
+/* .dorasuki_table {
+    border-bottom: solid 1px;
+    border-radius: 0 0 0 0;
+} */
+.dorasuki_table img{
+    /* width:10px; */
+    margin:0;
+    margin: auto;
+}
+
+
+/* #Ranking tr th,
+#Ranking tr td {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+#Ranking tr:nth-child(odd){
+  background: #FFFDDF;
+}
+#Ranking tr:nth-child(even){
+  background: #FFF9A1;
+}
+#Ranking tr th{
+  background: #333;
+  color:#fff;
+}
+#Ranking tr td:first-child {
+  border-left: none;
+}
+#Ranking tr td:last-child {
+  border-right: none;
+}
+#Ranking tr th:first-child {
+  border-radius: 10px 0 0 0;
+}
+#Ranking tr th:last-child {
+  border-right: none;
+  border-radius: 0 10px 0 0;
+}
+#Ranking tr:last-child td:first-child{
+  border-top: none;
+  border-radius: 0 0 0 10px;
+}
+#Ranking tr:last-child td:last-child {
+  border-bottom: none;
+  border-radius: 0 0 10px 0;
+} */
+
+/* === Copyright === */
+.copyright {
+  margin-top: 30px;
+  text-align: right;
+}
+.copyright p, .copyright a {
+  color: #828078;
+  font-size: 12px;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+.copyright p a:hover, .copyright a a:hover {
+  color: #f2672e;
+}
+

@@ -1,0 +1,36 @@
+account
+menu_map: [array: map] <- 
+  menu_name: [map]
+    allergen: [array: string]
+    consumptions: [array]
+      0: [map]
+        consumption: [number] <- amount of stock consumption
+        stock_selection: [array, string] <- item which will be decreased it's stock by ordering this main menu
+    description: [string]
+    contents_gram: [number]
+    stock_selection: []
+    imgInfo: [map]
+      cropArea: [map]
+        width: [number]
+        height: [number]
+        left: [number]
+        top: [number]
+        orgImgUrl: [string]
+        img_path: [string]
+    ingredientList: [string]
+    is_show: [boolean]
+    options: [array: map]
+      choices: [array: map] <- 1st one is for topping
+        recommended: [boolean]
+        selectDescription: [string]
+        optionDescription: [string]
+      choices: [array: map] <- 1st one is for topping
+        recommended: [boolean]
+        selectDescription: [string]
+        optionDescription: [string] <- options for example about size after 2nd choices 
+    preservation: [map]
+      number: [number] <- the number of selection
+      text: [string] <- description
+      recommended_menu: [boolean]
+    price: [number]
+    type: [string]

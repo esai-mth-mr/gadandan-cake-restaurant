@@ -1,0 +1,20 @@
+.flex{
+  max-width: 600px;
+  margin: 0 auto;
+}
+img{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+/* @media screen and (min-width:600px) { */
+@media screen and (min-width:350px) {
+  .flex{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+  }
+  .item+.item{
+    margin-left:1.0em;
+  }
+}

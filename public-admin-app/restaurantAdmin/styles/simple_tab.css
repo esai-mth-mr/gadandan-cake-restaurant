@@ -1,0 +1,171 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+/* body{
+  padding:0;
+  margin:0;
+  background:#fff;
+} */
+h1{
+  text-align:center;
+  font:300 40px 'open sans',sans-serif;
+  color:#666;
+  text-transform:uppercase;
+}
+.tabs{
+  /* width:50%; */
+  width:95%;
+  margin:10px auto;
+  position:relative;
+}
+.tab-buttons span{
+  font:400 14px 'open sans',sans-serif;
+  color:#333;
+  background:#eee;
+  cursor:pointer;
+  border-bottom:2px solid #ddd;
+  display:block;
+  /* width:33.3%; */
+  width:25%;
+  float:left;
+  text-align:center;
+  height:40px;
+  line-height:40px;
+
+  color:white;
+  font-family: Verdana;
+  font-weight: bold;
+  border-radius: 50px 50px 0px 0px;
+}
+.tab-content{
+  border-bottom:3px solid #ddd;
+  /* padding:15px; */
+  /* padding:5px 5px 5px 5px; */
+  background:#eee;
+  display:inline-block;
+  font:400 13px 'open sans',sans-serif;
+  color:#333;
+  width:100%;
+  /* background-image: linear-gradient(to top left, #00a7ee 20%, #55ccff 65%, white 200%); */
+  border-radius: 50px 50px 0px 0px;
+
+  /* background-color: #CAE9FF;
+  background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #E7F8FC), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #E7F8FC),color-stop(.75, #E7F8FC), color-stop(.75, transparent),to(transparent));
+  -webkit-background-size: 14px 14px;
+  border-radius: 0px 0px 50px 50px;
+  padding: 5px 10px 30px 10px; */
+  border-radius: 0px 0px 50px 50px;
+  /* padding: 5px 10px 30px 10px; */
+}
+
+.Ranking_Stripe {
+    /* background-color: #CAE9FF; */
+    background-color: #ADD8FF;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #CCE7FF), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #CCE7FF),color-stop(.75, #E7F8FC), color-stop(.75, transparent),to(transparent));
+    -webkit-background-size: 14px 14px;
+}
+.History_Stripe {
+    background-color: #A6FC9F;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #CFFCCC), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #CFFCCC),color-stop(.75, #FFEFEF), color-stop(.75, transparent),to(transparent));
+    -webkit-background-size: 14px 14px;
+}
+.Report_Stripe {
+    background-color: #F4C1C1;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #F4D5D5), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #F4D5D5),color-stop(.75, #E7F8FC), color-stop(.75, transparent),to(transparent));
+    -webkit-background-size: 14px 14px;
+    border-radius: 0px 0px 50px 50px;
+    /* padding: 5px 10px 30px 10px; */
+}
+.Reserve_Stripe {
+    background-color: #F4C1C1;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #fca4ff), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #F4D5D5),color-stop(.75, #E7F8FC), color-stop(.75, transparent),to(transparent));
+    -webkit-background-size: 14px 14px;
+    border-radius: 0px 0px 50px 50px;
+    /* padding: 5px 10px 30px 10px; */
+}
+
+/* メニュー管理 */
+.tab-buttons > .content1 {
+    background-image: linear-gradient(to top left, #00a7ee 20%, #55ccff 65%, white 200%);
+}
+/* スケジュール */
+.tab-buttons > .content2 {
+    /* background-image: linear-gradient(to top left, #00F287 20%, #2FFF71 65%, white 200%); */
+    /* background-image: linear-gradient(to top left, #00a287 20%, #20b071 65%, white 100%) */
+    background-image: linear-gradient(to top left, #00a287 39%, #20b071 65%, #20dd71 100%)
+}
+/* 売上レポート */
+.tab-buttons > .content3 {
+    background-image: linear-gradient(to top left, #F89174 20%, #FFC778 65%, white 200%);
+}
+/* 予約注文 */
+.tab-buttons > .content4 {
+    background-image: linear-gradient(to top left, #ff9afc 20%, #ffb9fa 65%, white 200%);
+}
+
+#lamp{
+  width: 25%;
+  height:10px;
+  /* background:#333; */
+  display:block;
+  position:absolute;
+  top:40px;
+  transition: all .3s ease-in;
+-o-transition: all .3s ease-in;
+-webkit-transition: all .3s ease-in;
+-moz-transition: all .3s ease-in;
+}
+#lamp.content1 {
+  left:0;
+  transition: all .3s ease-in;
+-o-transition: all .3s ease-in;
+-webkit-transition: all .3s ease-in;
+-moz-transition: all .3s ease-in;
+}
+#lamp.content2 {
+  left: 25%;
+  transition: all .3s ease-in;
+-o-transition: all .3s ease-in;
+-webkit-transition: all .3s ease-in;
+-moz-transition: all .3s ease-in;
+}
+#lamp.content3 {
+  left:50.0%;
+  transition: all .3s ease-in;
+-o-transition: all .3s ease-in;
+-webkit-transition: all .3s ease-in;
+-moz-transition: all .3s ease-in;
+}
+#lamp.content4 {
+  left:75.0%;
+  transition: all .3s ease-in;
+-o-transition: all .3s ease-in;
+-webkit-transition: all .3s ease-in;
+-moz-transition: all .3s ease-in;
+}
+
+
+
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+  margin: 10px 5px 20px 5px;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+/* 大元のライブラリのCSSに追加（２つの予定を入れようとするとマージンがなくて２つ目の予定がドラッグできなかったため） */
+.fc-media-screen .fc-timegrid-event-harness {
+  margin: 0px 10px 0px 10px;
+}
+
+.fc-timegrid-event-harness {
+  /* margin-right: 0px; */
+}
+
+/* .fc-day-tue {
+  background-color: #00a7ee;
+} */
+

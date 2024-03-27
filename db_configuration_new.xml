@@ -1,0 +1,50 @@
+
+Restaurant:[collection]
+  account:[map]
+    email:[string],
+    hq_address:[string],
+    resturant_name:[string],
+    phone_number:[string],
+
+  menu_map: [array: map] <- 
+    menu_name: [string],
+    allergen: [array: map]
+      name:[string],
+      img_path:[string]
+    img_path:[string]
+    description: [string]
+    contents_gram: [number]
+    ingredient_list: [string]
+    price: [number]
+    type: [string]
+    is_sale:[boolean]
+    type:[string],
+    sub_images:[array:string],
+    recommended_menu:[array:string]
+
+  top_ad_slider:[array:map] 
+    img_path:[string]
+    main_title:[string],
+    sub_title:[string],
+
+  type_order:[array:string]
+
+WebOrder:[collection]
+  customer_id:[document id for CustomerAccount],
+  resturant_id:[document id for Restaurant],
+  order:[array:map]
+    menu_name:[string],
+    count:[number],
+  order_time:[timestamp],
+  receive_time:[timestamp],
+  total_price:[number],
+
+CustomerAccount:[collection]
+  address:[string],
+  age:[number],
+  email:[string],
+  name:[string],
+  phone_number:[string],
+  postcode:[string],
+  gender:[number],
+  user_id:[string]

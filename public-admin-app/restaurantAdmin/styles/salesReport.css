@@ -1,0 +1,173 @@
+/* 
+body
+{
+ margin:0 auto;
+ padding:0px;
+ text-align:center;
+ width:100%;
+ font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+} */
+
+#wrapper
+{
+ margin:0 auto;
+ padding:0px;
+ text-align:center;
+ width:995px;
+}
+#wrapper h1
+{
+ margin-top:50px;
+ font-size:45px;
+ color:#585858;
+}
+#wrapper h1 p
+{
+ font-size:20px;
+}
+#report-table
+{
+ width:500px;
+ text-align:left;
+ border-collapse: collapse;
+ color:#2E2E2E;
+ border:#A4A4A4;
+ margin: 0 auto;
+}
+
+/* #report-table tr:hover
+{
+ background-color: #f67280;
+ cursor:pointer;
+} */
+
+#order_table {
+    user-select: none;
+}
+
+.report-table-openable {
+    background-color: #fbeca3;
+    border-bottom: solid 1px #aaa;
+    cursor:pointer;
+}
+
+.report-table-openable:hover {
+    /* background-color: #f67280; */
+    /* background-color: #9adefb; */
+    background-color: #ffd36c;
+}
+
+#report-table .hidden_row
+{
+ display:none;
+}
+
+.report-table-header {
+    background-color: #777;
+    color: white;
+}
+
+
+td.details-control {
+    text-align:center;
+    width:5%;
+    min-width:5%;
+    max-width:5%;
+  }
+  td.details-control:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0fe";
+    font-weight: 900;
+    padding: 0px;
+    color: #f67280;　/*アイコンの色*/
+  }
+  tr.shown td.details-control:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f146";
+    font-weight: 900;
+    padding-left: 0px;
+    color: #36b5b0; /*アイコンの色*/
+  }
+  
+  #allBtn {
+    margin: 20px 0px 20px 0px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px gray ; 
+  }
+  
+  .btn-flat-border {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #ff7f7f;
+    border: solid 2px #ff7f7f;
+    border-radius: 3px;
+    transition: .4s;
+  }
+  
+  .btn-flat-border:hover {
+    background: #ff7f7f;
+    color: white;
+  }
+
+
+
+
+
+ /* 開いた後のテーブル */
+  #order_table + table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+  
+  #order_table + table tr{
+    border-bottom: solid 1px #ddd;
+    cursor: pointer;
+  }
+  
+  #order_table + table tr:hover{
+    background-color: #d4f0fd;
+  }
+  
+  #order_table + table th, #order_table + table td{
+    text-align: center;
+    width: 25%;
+    padding: 15px 0;
+    /* background-color: white; */
+  }
+  
+  #order_table + table td.icon{
+    background-size: 35px;
+    background-position: left 5px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+  }
+  
+  #order_table + table td.icon.bird{
+    background-image: url(icon-bird.png)
+  }
+  
+  #order_table + table td.icon.whale{
+    background-image: url(icon-whale.png)
+  }
+  
+  #order_table + table td.icon.crab{
+    background-image: url(icon-crab.png)
+  }
+
+  .order_detail {
+      background-color: white;
+  }
+
+  #displaySalesData {
+    text-align: left;
+    margin: 10px 30px 30px 30px;
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+    background-color: #ffffdf;
+  }
+
+  #getSalesReport {
+    margin: 10px 30px 10px 30px;
+  }

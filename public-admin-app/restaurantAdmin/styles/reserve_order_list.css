@@ -1,0 +1,15 @@
+#reserve-order-table {
+  table-layout: fixed;
+  width: 100%;
+  word-wrap: break-word;
+  border-collapse:collapse;
+  margin:0 auto;
+}
+
+#reserve-order-table td,th{
+  padding:10px;
+}
+#reserve-order-table th{
+  color:#fff;
+  background:#005ab3;
+}

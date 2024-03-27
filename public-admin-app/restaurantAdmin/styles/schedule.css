@@ -1,0 +1,36 @@
+/* #buttons-container {
+    width:10px;
+}
+
+.buttons-container {
+    width:10px !important;
+} */
+
+#my-PayPal {
+    width:25%;
+    margin: 0 auto;
+}
+
+#sche-total-cost-box {
+    font-size: 30px;
+}
+
+#reset-button-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#reset-button {
+    margin : 0px 30px 0px 0px;
+}
+#admin-schedule-box {
+    border: solid 2px #1c8952;
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+.admin-hr {
+    margin: 8px 10px 0px 10px;
+    border-top: 2px solid #1c8952;
+}

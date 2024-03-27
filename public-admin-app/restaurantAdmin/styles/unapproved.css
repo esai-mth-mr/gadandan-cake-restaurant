@@ -1,0 +1,54 @@
+#admin_main {
+    background-color: #F4DBBA;
+}
+#admin_header_1 {
+    text-transform:none;
+    text-decoration: underline;
+}
+#UnapprovalList {
+    margin: 50px auto;
+    /* background-color: #02AFFF; */
+    background-color: white;
+}
+
+#UnapprovalList th {
+    color:white;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+#UnapprovalList td {
+    padding: 10px;
+}
+
+.winner {
+    /* color: red; */
+    color: #289eff;
+}
+
+
+
+
+#approved_table {
+    margin:auto;
+}
+
+#ApprovedList {
+    margin: 50px auto;
+    background-color: white;
+}
+#ApprovedList th {
+    color:white;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+#ApprovedList th {
+    color:white;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+#ApprovedList td {
+    padding: 10px;
+}
